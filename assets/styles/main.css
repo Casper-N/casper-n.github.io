@@ -1,0 +1,50 @@
+body {
+  padding-top: 84px;
+}
+
+.target-anchor {
+  position: relative;
+  top: -84px;
+  visibility: hidden;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+}
+
+.img-container img {
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+
+.img-container .img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-text {
+  font-size: 38px;
+}
+
+@media (max-width: 1000px) {
+  .img-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .img-text {
+    font-size: 12px;
+  }
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+span.fa:hover {
+  opacity: 0.7;
+}
